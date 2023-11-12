@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+.image{
+    background-image: url(signupformpic.jpg);
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+
+}
