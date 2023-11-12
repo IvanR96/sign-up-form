@@ -2,12 +2,16 @@
     font-family: Norse-Bold;
     src: url(Norse-Bold.otf);
 }
+.content{
+    min-height: 100vh;
+    display: flex;
+}
 
 .image{
-    background-image: url(signupformpic.jpg);
     display: flex;
     flex-direction: column;
-    background-size: cover;
     background-position: center;
+    justify-content: space-between;
+    
 
 }
