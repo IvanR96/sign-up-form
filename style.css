@@ -1,3 +1,7 @@
+:root {
+    --left-space: 48px;
+  }
+
 @font-face {
     font-family: Norse-Bold;
     src: url(Norse-Bold.otf);
@@ -8,6 +12,7 @@ body{
 }
 .content{
     min-height: 100vh;
+    display: flex;
 
 }
 
@@ -21,18 +26,17 @@ body{
 
 }
 
-.banner{
-    font-family: Norse-Bold;
+.banner {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 5.5rem;
-    margin-top: -100vh;
+    font-family: "Norse-Bold";
+    margin-top: 20vh;
     padding: 16px 0;
     background-color: rgba(0, 0, 0, 0.4);
-    color: white;
+  }
     
-}
 .banner img{
     height: 125px;
 }
@@ -50,3 +54,24 @@ body{
     padding-left: 5px;
     padding-right: 5px;
 }
+
+.text-area{
+    flex: 5;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.text-area > p {
+    font-size: 1.4rem;
+    margin-left: var(--left-space);
+    font-weight: bold;
+    max-width: 80%;
+    margin-bottom: 8px;
+  }
+  
+  .text-area p:first-child {
+    margin-top: 0;
+  }
