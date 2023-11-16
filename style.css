@@ -1,6 +1,4 @@
-:root {
-    --left-space: 48px;
-  }
+
 
 @font-face {
     font-family: Norse-Bold;
@@ -10,20 +8,24 @@ body{
     margin: 0;
     padding: 0;
 }
-.content{
-    min-height: 100vh;
+.content {
     display: flex;
-
 }
 
-.image{
+.image {
     display: flex;
     flex-direction: column;
     background-position: center;
     justify-content: space-between;
-    flex: 3;
-    
+    flex: 1; /* Adjust the flex value */
+}
 
+.text-area {
+    flex: 2; /* Adjust the flex value */
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .banner {
@@ -37,8 +39,9 @@ body{
     background-color: rgba(0, 0, 0, 0.4);
   }
     
-.banner img{
-    height: 125px;
+  .banner img {
+    max-height: 125px;
+    width: auto;
 }
 
 .credits{
@@ -55,23 +58,9 @@ body{
     padding-right: 5px;
 }
 
-.text-area{
-    flex: 5;
-    background-color: #f9fafb;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-
-.text-area > p {
-    font-size: 1.4rem;
-    margin-left: var(--left-space);
-    font-weight: bold;
-    max-width: 80%;
-    margin-bottom: 8px;
-  }
   
   .text-area p:first-child {
     margin-top: 0;
   }
+  
