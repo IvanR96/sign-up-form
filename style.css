@@ -33,6 +33,7 @@ p{
     justify-content: space-between;
 }
 
+/* flex area fixed */
 .text-area {
     flex: 5;
     background-color: #f9fafb;
