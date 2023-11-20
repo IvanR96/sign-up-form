@@ -79,6 +79,7 @@ p{
     margin-top: 0;
   }
   
+  /* fix inputs */
   .input{
     display: flex;
     flex-direction: column;
